@@ -118,9 +118,18 @@ nav ul li a:hover {
     z-index: -1;
 }
 
+
+main div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
 .welcome {
     margin-top: 55px;  
-    width: 65%;
+    /* width: 65%; */
     height: auto;
     padding-top: 5px;
     flex-grow: 4;
@@ -158,7 +167,10 @@ button:hover {
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
 }  
-
+.btns {
+    display: flex;
+    flex-direction: row;
+}
 .btn-resume {
     background-color: transparent;
     color: var(--heading-color);
@@ -177,7 +189,7 @@ span {
     color: var(--heading-color);
 }
 .about {
-    width: 65%;
+    /* width: 65%; */
 }
 .about div {
     margin-top: 15px;
@@ -195,7 +207,7 @@ span {
 }
 
 .projects {
-    width: 65%;
+    /* width: 65%; */
     /* background-color: red; */
     display: flex;
     flex-direction: column;
@@ -300,6 +312,8 @@ span {
 /* contact section  */
 .contact {
     width: 65%;
+    justify-content: center;
+    align-items: center;
 }
 .contact, form {
     display: flex;
@@ -310,6 +324,9 @@ form {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    margin-top: 10px;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 input {
     height: 45px;
@@ -340,4 +357,14 @@ textarea {
     -o-border-radius: 10px;
     padding: 15px;
     resize: none;
+}
+
+
+footer {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
 }
