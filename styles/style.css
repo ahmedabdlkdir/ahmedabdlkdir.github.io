@@ -17,6 +17,25 @@
 
     /*#C1C1D8, #8585B6  */
   }
+
+  /* customer scroll bar  */
+  body::-webkit-scrollbar {
+    width: .5em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--heading-color);
+    outline: 1px solid var(--text-color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
 body {
     background-color: var(--main-bg-color);
     height: 100vh;
@@ -78,6 +97,7 @@ nav ul li a:hover {
 
 /* main content section  */
 .content {
+
     display: flex;
     column-gap: 50px;
 
@@ -122,14 +142,21 @@ nav ul li a:hover {
 main div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background-color: red; */
+    /* justify-content:left; */
+    /* align-items: start; */
+    
+}
+
+.welcome, .projects, .skills,
+.about{
+    margin: auto;
+    width: 60%;
 }
 
 .welcome {
     margin-top: 55px;  
     /* width: 65%; */
+    /* margin: auto; */
     height: auto;
     padding-top: 5px;
     flex-grow: 4;
@@ -230,7 +257,19 @@ span {
     column-gap: 15px;
     -webkit-border-radius:20px;
 }
+.projects-container {
+    display: flex;
+    /* background-color: red; */
+    flex-direction: row;
+    row-gap: 10px;
+    /* column-gap: 5px; */
+    flex-wrap: wrap;
+}
 
+.project {
+    margin: 20px;
+    width: 40%;
+}
 .project .portfolio-img {
     background-image: url('/imgs/placeholder.jpg');
 }
@@ -260,17 +299,7 @@ span {
     -ms-border-radius: 20px 20px 0  0;
     -o-border-radius: 20px 20px 0  0;
 }
- /* .project img {
-    width: 30%;
-    height: 208px;
-    border-radius: 25px 0 0 20px;
-    -webkit-border-radius: 25px 0 0 20px;
-    -moz-border-radius: 25px 0 0 20px;
-    -ms-border-radius: 25px 0 0 20px;
-    -o-border-radius: 25px 0 0 20px;
-    flex-grow: 2;
 
-}  */
 
 .project .about-project {
     /* flex-grow: 3; */
@@ -310,15 +339,8 @@ span {
 } */
 
 /* contact section  */
-.contact {
-    width: 65%;
-    justify-content: center;
-    align-items: center;
-}
-.contact, form {
-    display: flex;
-    flex-direction: column; 
-}
+
+
 form {
     width: 70%;
     display: flex;
@@ -367,4 +389,6 @@ footer {
     justify-content: center;
     align-items: center;
     color: var(--text-color);
+    padding-top: 15px;
+    border-top: 1px solid var(--heading-color);
 }

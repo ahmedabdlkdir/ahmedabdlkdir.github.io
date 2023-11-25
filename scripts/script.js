@@ -14,4 +14,5 @@ function displayNumberLine(){
     document.getElementById('lines').innerHTML = numberLine; 
 }
 
+
 displayNumberLine();
